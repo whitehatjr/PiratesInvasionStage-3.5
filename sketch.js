@@ -5,7 +5,6 @@ const Constraint = Matter.Constraint;
 var engine, world, backgroundImg;
 var canvas, angle, tower, ground, cannon, boat;
 var balls = [];
-var boats = [];
 
 
 function preload() {
@@ -23,7 +22,7 @@ function setup() {
   cannon = new Cannon(width / 2 - 600, height / 2 - 220, 120, 40, angle);
 
   boat = new Boat(width, height - 100, 200, 200, -100);
-  
+
 }
 
 function draw() {
@@ -39,7 +38,7 @@ function draw() {
   });
   boat.display()
 
- 
+
 
   for (var i = 0; i < balls.length; i++) {
     showCannonBalls(balls[i], i);
@@ -79,5 +78,3 @@ function keyReleased() {
     balls[balls.length - 1].shoot();
   }
 }
-
-
