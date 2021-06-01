@@ -1,2 +1,2 @@
 # PiratesInvasionStage-3.5
-boiler plate for 26
+boilerplate for 26
